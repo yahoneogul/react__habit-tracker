@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
-class Navbar extends Component {
+class Navbar extends PureComponent {
   render() {
     return (
       <nav className="navbar">
-        <i className="navbar-logo fas fa-leaf"></i>
-        <h1>Habit Tracker</h1>
+        <i className="fas fa-grin-stars navbar-logo"></i>
+        <strong>Habit Tracker</strong>
         <span className="navbar-count">{this.props.totalCount}</span>
       </nav>
     );
